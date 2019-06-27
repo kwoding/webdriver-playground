@@ -1,0 +1,11 @@
+*.class
+*.log
+*.iml
+.tmp
+.idea
+.DS_Store
+output/
+build/
+target/
+apps/
+node_modules/

@@ -1,0 +1,17 @@
+{
+    "env": {
+        "mocha": true,
+        "es6": true,
+        "node": true
+    },
+    "plugins": [ "protractor" ],
+    "extends": [
+        "airbnb-base",
+        "plugin:protractor/recommended"
+    ],
+    "rules": {
+        "indent": [ "error", 4 ],
+        "comma-dangle": [ "off" ],
+        "class-methods-use-this": [ "off" ]
+    }
+}

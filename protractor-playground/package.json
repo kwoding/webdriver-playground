@@ -1,0 +1,27 @@
+{
+  "name": "protractor-playground",
+  "version": "1.0.0",
+  "description": "Protractor playground based on Mocha and Chai",
+  "scripts": {
+    "lint": "eslint ./",
+    "webdriver-manager": "./node_modules/webdriver-manager/bin/webdriver-manager update && ./node_modules/webdriver-manager/bin/webdriver-manager start",
+    "test": "./node_modules/protractor/bin/protractor protractor.conf.js"
+  },
+  "author": "Kwo Ding",
+  "devDependencies": {
+    "@babel/cli": "^7.4.4",
+    "@babel/core": "^7.4.5",
+    "@babel/preset-env": "^7.4.5",
+    "@babel/register": "^7.4.4",
+    "chai": "^4.2.0",
+    "eslint": "^5.16.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.17.3",
+    "eslint-plugin-protractor": "^1.41.1",
+    "mocha": "^6.1.4",
+    "webdriver-manager": "^12.1.5"
+  },
+  "dependencies": {
+    "protractor": "^5.4.2"
+  }
+}

@@ -1,0 +1,17 @@
+{
+    "env": {
+        "webdriverio/wdio": true,
+        "mocha": true,
+        "es6": true,
+        "node": true
+    },
+    "plugins": [ "webdriverio" ],
+    "extends": [
+        "airbnb-base"
+    ],
+    "rules": {
+        "indent": [ "error", 4 ],
+        "comma-dangle": [ "off" ],
+        "class-methods-use-this": [ "off" ]
+    }
+}
