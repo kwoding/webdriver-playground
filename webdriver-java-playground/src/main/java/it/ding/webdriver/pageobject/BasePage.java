@@ -73,8 +73,8 @@ public class BasePage {
     }
 
     public void waitUntilTextPresentInElement(By locator, String searchString) {
-            WebDriverWait wait = new WebDriverWait(driver, TIMEOUT_IN_SECONDS);
-            wait.until(ExpectedConditions.textToBePresentInElementLocated(locator, searchString));
+        WebDriverWait wait = new WebDriverWait(driver, TIMEOUT_IN_SECONDS);
+        wait.until(ExpectedConditions.textToBePresentInElementLocated(locator, searchString));
     }
 
     public boolean isTextPresentInElement(By locator, String searchString) {
