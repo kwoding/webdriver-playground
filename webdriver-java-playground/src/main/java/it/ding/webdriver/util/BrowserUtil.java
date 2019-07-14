@@ -9,15 +9,15 @@ public class BrowserUtil {
     private BrowserUtil() {
     }
 
-    public static void refreshPage() {
+    static void refreshPage() {
         getDriver().navigate().refresh();
     }
 
-    public static String getCurrentUrl() {
+    static String getCurrentUrl() {
         return getDriver().getCurrentUrl();
     }
 
-    public static void resizeBrowser(int width, int height) {
+    static void resizeBrowser(int width, int height) {
         Dimension dimension = new Dimension(width,height);
         getDriver().manage().window().setSize(dimension);
     }
