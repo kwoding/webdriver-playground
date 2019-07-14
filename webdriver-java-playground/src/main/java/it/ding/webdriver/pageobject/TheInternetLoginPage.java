@@ -28,12 +28,12 @@ public class TheInternetLoginPage extends BasePage {
     }
 
     public String getConfirmationText() {
-        isDisplayed(CONFIRMATION_TEXT);
+        waitUntilDisplayed(CONFIRMATION_TEXT);
         return getText(CONFIRMATION_TEXT);
     }
 
     public WebElement getSubmitButton() {
-        isDisplayed(SUBMIT);
+        waitUntilDisplayed(SUBMIT);
         return find(SUBMIT);
     }
 }

@@ -58,20 +58,28 @@ public class BasePage {
         return find(locator).getText();
     }
 
+    public void waitUntilDisplayed(By locator) {
+        WebDriverWait wait = new WebDriverWait(driver, TIMEOUT_IN_SECONDS);
+        wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
+    }
+
     public boolean isDisplayed(By locator) {
         try {
-            WebDriverWait wait = new WebDriverWait(driver, TIMEOUT_IN_SECONDS);
-            wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
+            waitUntilDisplayed(locator);
         } catch (org.openqa.selenium.TimeoutException exception) {
             return false;
         }
         return true;
     }
 
-    public boolean textPresentInElement(By locator, String searchString) {
-        try {
+    public void waitUntilTextPresentInElement(By locator, String searchString) {
             WebDriverWait wait = new WebDriverWait(driver, TIMEOUT_IN_SECONDS);
             wait.until(ExpectedConditions.textToBePresentInElementLocated(locator, searchString));
+    }
+
+    public boolean isTextPresentInElement(By locator, String searchString) {
+        try {
+            waitUntilTextPresentInElement(locator, searchString);
         } catch (org.openqa.selenium.TimeoutException exception) {
             return false;
         }
