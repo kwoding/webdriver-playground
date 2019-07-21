@@ -9,6 +9,8 @@ export default class TheInternetLoginPage extends BasePage {
 
     get confirmationText() { return $('.success').getText(); }
 
+    get someElement() { return element(by.css('[ng-model="test"]')); }
+
     visit() {
         super.visit('login');
     }
