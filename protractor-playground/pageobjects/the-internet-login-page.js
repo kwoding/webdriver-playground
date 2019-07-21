@@ -11,6 +11,10 @@ export default class TheInternetLoginPage extends BasePage {
 
     get someElement() { return element(by.css('[ng-model="test"]')); }
 
+    get anotherElement() { return element(by.id('a title')); }
+
+    get yetAnotherElement() { return element(by.xpath('/container/div[1]/title')); }
+
     visit() {
         super.visit('login');
     }

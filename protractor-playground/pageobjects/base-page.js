@@ -4,6 +4,11 @@ export default class BasePage {
     }
 
     visit(path) {
+        browser.sleep(500);
         browser.get(`/${path}`);
+    }
+
+    forceClick(elm) {
+        browser.actions().click(elm);
     }
 }
