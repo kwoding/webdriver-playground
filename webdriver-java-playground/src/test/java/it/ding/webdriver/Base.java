@@ -10,7 +10,7 @@ import org.openqa.selenium.remote.RemoteWebDriver;
 
 public class Base {
 
-    private static RemoteWebDriver driver;
+    public static RemoteWebDriver driver;
 
     @BeforeClass
     public static void setUp() {
