@@ -1,5 +1,3 @@
-import { browser } from 'protractor';
-
 require('@babel/register');
 
 exports.config = {
