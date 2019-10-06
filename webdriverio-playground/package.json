@@ -18,7 +18,7 @@
     "@wdio/spec-reporter": "5.9.3",
     "@wdio/sync": "5.10.1",
     "chai": "4.2.0",
-    "chromedriver": "75.0.0",
+    "chromedriver": "76.0.0",
     "eslint": "5.16.0",
     "eslint-config-airbnb-base": "13.1.0",
     "eslint-plugin-import": "2.17.3",
